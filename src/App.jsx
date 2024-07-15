@@ -1,8 +1,14 @@
+import Hero from "./components/Hero";
+import Highlights from "./components/Highlights";
+import Nav from "./components/Nav";
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hi </h1>
-    </>
+    <main className="bg-black">
+      <Nav />
+      <Hero />
+      <Highlights />
+    </main>
   );
 }
 

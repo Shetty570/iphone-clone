@@ -9,6 +9,8 @@ import {
   yellowImg,
 } from "../utils";
 
+import React from "react";
+
 export const navLists = ["Store", "Mac", "iPhone", "Support"];
 
 export const hightlightsSlides = [
