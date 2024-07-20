@@ -4,15 +4,15 @@ import React, { useEffect, useState } from "react";
 import { heroVideo, smallHeroVideo } from "../utils";
 
 function Hero() {
-  const [videoSrc, setvideoSrc] = useState(
+  const [videoSrc, setVideoSrc] = useState(
     window.innerWidth < 760 ? smallHeroVideo : heroVideo
   );
 
   const handleVideoSrc = () => {
     if (window.innerWidth < 760) {
-      setvideoSrc(smallHeroVideo);
+      setVideoSrc(smallHeroVideo);
     } else {
-      setvideoSrc(heroVideo);
+      setVideoSrc(heroVideo);
     }
   };
 
@@ -25,9 +25,10 @@ function Hero() {
   }, []);
 
   useGSAP(() => {
-    gsap.to("#hero ", { opacity: 1, delay: 2 });
-    gsap.to("#cta ", { opacity: 1, y: -50, delay: 2 });
+    gsap.to("#hero", { opacity: 1, delay: 2 });
+    gsap.to("#cta", { opacity: 1, y: -50, delay: 2 });
   }, []);
+
   return (
     <section className="w-full nav-height bg-black relative">
       <div className="h-5/6 w-full flex-center flex-col">
